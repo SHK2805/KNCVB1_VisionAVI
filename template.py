@@ -39,6 +39,9 @@ def create_project_structure(project_name: str) -> bool:
             f"data",
             # database
             f"database/__init__.py",
+            # research
+            f"research/__init__.py",
+            f"research/database/operations/__init__.py",
             # utils
             f"utils/__init__.py",
             f"utils/db_utils.py",
