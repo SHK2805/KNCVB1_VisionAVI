@@ -1,5 +1,10 @@
+python-dotenv
 numpy
 setuptools
 pyyaml
+boto3
+python-dotenv
+botocore
+pathlib
 
 # -e .
