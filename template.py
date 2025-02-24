@@ -43,8 +43,8 @@ def create_project_structure(project_name: str) -> bool:
             f"utils/__init__.py",
             f"utils/db_utils.py",
             # logging
-            f"logging/__init__.py",
-            f"logging/logger.py",
+            f"logger/__init__.py",
+            f"logger/logger.py",
             # exception
             f"exception/__init__.py",
             f"exception/exception.py",
