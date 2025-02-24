@@ -50,8 +50,8 @@ Resources:
       GroupName: !Ref SecurityGroupName
       SecurityGroupIngress:
         - IpProtocol: tcp
-          FromPort: 8000
-          ToPort: 8000
+          FromPort: 8080
+          ToPort: 8080
           CidrIp: 0.0.0.0/0
         - IpProtocol: tcp
           FromPort: 22
@@ -79,7 +79,7 @@ Resources:
           #!/bin/bash
           sudo apt-get update -y
           sudo apt-get upgrade -y
-          sudo apt-get install -y sqlite3 python3-pip build-essential
+          sudo apt-get install -y sqlite3 python3 python3-pip build-essential
 
 Outputs:
   BucketName:

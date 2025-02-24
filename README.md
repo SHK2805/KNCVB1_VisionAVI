@@ -9,7 +9,9 @@
 4. [Folder Structure](#folder-structure)
 5. [Logging](#logging)
 6. [Exception](#exception)
-7. [Infrastructure](#infrastructure)
+7. [FastAPI](#fastapi)
+8. [Docker](#docker)
+9. [Infrastructure](#infrastructure)
 
 ## Introduction
 * This is the KNCVB1 Vision AVI project
@@ -147,6 +149,22 @@ pip install requirements.txt
 ## Exception
 * A custom exception is written in the `exception/exception.py` file.
 * This is used to raise exceptions with a custom message.
+
+## FastAPI
+* The FastAPI is used to create the API for the project
+* The FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
+* The app is created in the `app.py` file
+
+## Docker
+* Below are the files used for docker
+  * Dockerfile
+  * docker-compose.yml
+* To build the docker image
+```bash
+docker compose up
+```
+* This will launch the docker container and the app will be running on `http://localhost:8080/`
+* The docker runs the app on port 8080
 
 ## Infrastructure
 * All the infrastructure code is written in the `database` directory.

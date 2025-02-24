@@ -39,10 +39,14 @@ def create_project_structure(project_name: str) -> bool:
             f"data",
             # database
             f"database/__init__.py",
+            # cloud
             f"database/cloud/__init__.py",
             f"database/cloud/cloudformation_template.yaml",
             f"database/cloud/deploy_stack.py",
             f"database/cloud/constants.py",
+            # scripts
+            f"database/scripts/create.sh",
+            f"database/scripts/schema.sql",
             # research
             f"research/__init__.py",
             f"research/database/operations/__init__.py",
@@ -59,6 +63,17 @@ def create_project_structure(project_name: str) -> bool:
             f"__init__.py",
             # clean
             "clean.py",
+            # main
+            "main.py",
+            # app
+            "app.py",
+            # docker
+            "Dockerfile",
+            ".dockerignore",
+            "docker-compose.yml",
+            # config
+            "config.py",
+            "config.yaml",
         ]
 
         for filepath in list_of_files:
@@ -66,7 +81,13 @@ def create_project_structure(project_name: str) -> bool:
             filedir = filepath.parent
 
             # files
-            if filepath.name in ['setup.py', 'requirements.txt', 'README.md', '.gitignore','.env']:
+            if filepath.name in ['setup.py',
+                                 'requirements.txt',
+                                 'README.md',
+                                 '.gitignore',
+                                 '.env',
+                                 'Dockerfile',
+                                 '.dockerignore',]:
                 create_file(filepath)
                 continue
 
